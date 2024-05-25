@@ -121,13 +121,13 @@
                 else if (x==1){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/paper.jpg">`;
-                    result.innerHTML = `<p>Computer Won!!</p>
+                    result.innerHTML = `<p>Computer Won!! Paper beats Rock!!</p>
                     <p>Better Luck Next Time</p>`;
                 }
                 else if(x==2){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/scissor.jpg">`;
-                    result.innerHTML = `<p>You won!!</p>`;
+                    result.innerHTML = `<p>You won!! Rock beats Scissor</p>`;
                 }
             });
             document.querySelector(".paper").addEventListener("click",function(){
@@ -141,7 +141,7 @@
                 if (x==0){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/rock.jpg">`;
-                    result.innerHTML = `<p>You won!!</p>`;
+                    result.innerHTML = `<p>You won!! Paper beats Rock</p>`;
                 }
                 else if (x==1){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
@@ -151,7 +151,7 @@
                 else if(x==2){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/scissor.jpg">`;
-                    result.innerHTML = `<p>Computer Won!!</p>
+                    result.innerHTML = `<p>Computer Won!! Scissor beats Paper</p>
                     <p>Better Luck Next Time</p>`;
                 }
             });
@@ -159,20 +159,20 @@
                 playerdisplay.style.display = `block`;
                 computerdisplay.style.display = `block`;
                 playerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Your Choice</p>
-                    <img src="./Image/rock.jpg">`;
+                    <img src="./Image/scissor.jpg">`;
                 for (let i = 0; i < initial.length; i++) {
                     initial[i].style.display = "none";
                 }
                 if (x==0){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/rock.jpg">`;
-                    result.innerHTML = `<p>Computer Won!!</p>
+                    result.innerHTML = `<p>Computer Won!! Rock beats Scissor</p>
                     <p>Better Luck Next Time</p>`;
                 }
                 else if (x==1){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
                     <img src="./Image/paper.jpg">`;
-                    result.innerHTML = `<p>You Won!!</p>`;
+                    result.innerHTML = `<p>You Won!! Scissor beats Paper</p>`;
                 }
                 else if(x==2){
                     computerdisplay.innerHTML = `<p style="font-size: 20px; margin-top: 20px;">Computer's Choice</p>
