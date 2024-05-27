@@ -97,14 +97,15 @@
 
 
     <script>
-        let x = Math.random() * 3;
-        x = parseInt(x);
+        
 
         const playerdisplay = document.getElementById("user-result");
         const initial = document.getElementsByClassName("initial");
         const computerdisplay = document.getElementById("computer-result");
         const result = document.getElementById("result");
         function display(){
+            let x = Math.random() * 3;
+            x = parseInt(x);
             document.querySelector(".rock").addEventListener("click",function(){
                 playerdisplay.style.display = `block`;
                 computerdisplay.style.display = `block`;
